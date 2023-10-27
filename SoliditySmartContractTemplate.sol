@@ -66,6 +66,7 @@ contract SimpleContract is Ownable {
     uint storedData;
     address owner;
     mapping(address => uint) balances;
+    uint startingBalance = 1_000_000_000_000_000_000; // Underscores are commonly used in Solidity to improve readability of large numbers. Much easier to read than 1000000000000000000.
 
     // Events
     event Change(string message, uint newVal);
